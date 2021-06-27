@@ -116,6 +116,18 @@ species(
 )
 
 species(
+    label='NO2',
+    reactive=True,
+    structure=adjacencyList(
+"""
+multiplicity 2
+1 N u0 p1 c0 {2,D} {3,S}
+2 O u0 p2 c0 {1,D}
+3 O u1 p2 c0 {1,S}
+"""),
+)
+
+species(
     label='He',
     reactive=False,
     structure=adjacencyList(
@@ -125,8 +137,19 @@ species(
 )
 
 species(
+    label='H2OX',
+    reactive=True,
+    structure=adjacencyList(
+"""
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0
+"""),
+)
+species(
     label='NOX',
-    reactive=False,
+    reactive=True,
     structure=adjacencyList(
 """
 1 O u0 p2 c0 {2,D}
@@ -137,7 +160,7 @@ species(
 
 species(
     label='OX',
-    reactive=False,
+    reactive=True,
     structure=adjacencyList(
 """
 1 O u0 p2 c0 {2,D}
@@ -147,7 +170,7 @@ species(
 
 species(
     label='NX',
-    reactive=False,
+    reactive=True,
     structure=adjacencyList(
 """
 1 N u0 p1 c0 {2,T}
@@ -157,7 +180,7 @@ species(
 
 species(
     label='OHX',
-    reactive=False,
+    reactive=True,
     structure=adjacencyList(
 """
 1 O u0 p2 c0 {2,S} {3,S}
@@ -168,7 +191,7 @@ species(
 
 species(
     label='NH3X',
-    reactive=False,
+    reactive=True,
     structure=adjacencyList(
 """
 1 N u0 p1 c0 {2,S} {3,S} {4,S}
@@ -178,6 +201,54 @@ species(
 5 X u0 p0 c0
 """),
 )
+
+species(
+    label='NH2X',
+    reactive=True,
+    structure=adjacencyList(
+"""
+1 N u0 p1 c0 {2,S} {3,S} {4,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {1,S}
+"""),
+)
+
+species(
+    label='NHX',
+    reactive=True,
+    structure=adjacencyList(
+"""
+1 N u0 p1 c0 {2,S} {3,D}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0 {1,D}
+"""),
+)
+
+species(
+    label='N2OX',
+    reactive=True,
+    structure=adjacencyList(
+"""
+1 O u0 p2 c0 {2,D}
+2 N u0 p1 c0 {1,D} {3,S}
+3 N u0 p1 c0 {2,S} {4,D}
+4 X u0 p0 c0 {3,D}
+"""),
+)
+
+species(
+    label='NO2X',
+    reactive=True,
+    structure=adjacencyList(
+"""
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 N u0 p1 c0 {1,S} {2,D}
+4 X u0 p0 c0 {1,S}
+"""),
+)
+
 
 #-------------
 
@@ -194,11 +265,17 @@ surfaceReactor(
         "H2O":0.05,
         "N2O":0.0,
         "N2":0.0,
+        "NO2":0.0,
         "NX":0.0,
         "NOX":0.0,
         "NH3X":0.0,
+        "NH2X":0.0,
+        "NHX":0.0,
         "OX":0.0,
         "OHX":0.0,
+        "H2OX":0.0,
+        "N2OX":0.0,
+        "NO2X":0.0,
     },
     initialSurfaceCoverages={
         "X": 1.0,

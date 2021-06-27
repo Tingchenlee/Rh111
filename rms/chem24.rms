@@ -292,6 +292,35 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
+  - name: H2
+    radicalelectrons: 0
+    smiles: '[H][H]'
+    thermo:
+      polys:
+      - Tmax: 1959.0804531297094
+        Tmin: 100.0
+        coefs:
+        - 3.4353642235162485
+        - 0.00021270942350844047
+        - -2.786229341653473e-07
+        - 3.402655121455635e-10
+        - -7.760279017136295e-14
+        - -1031.3598463574888
+        - -3.9084177316343016
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1959.0804531297094
+        coefs:
+        - 2.7881546368748986
+        - 0.0005876554858175189
+        - 1.590036078696744e-07
+        - -5.527253607726157e-11
+        - 4.3430102377386895e-15
+        - -596.1376647773047
+        - 0.11279901330405337
+        type: NASApolynomial
+      type: NASA
+    type: Species
   name: gas
 - Species:
   - adjlist: '1 H u0 p0 c0 {2,S}
@@ -728,6 +757,42 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
+  - adjlist: '1 H u0 p0 c0 {2,S}
+
+      2 H u0 p0 c0 {1,S}
+
+      3 X u0 p0 c0
+
+      '
+    name: '[H][H].[Pt]'
+    radicalelectrons: 0
+    smiles: '[H][H].[Pt]'
+    thermo:
+      polys:
+      - Tmax: 911.3138249397687
+        Tmin: 100.0
+        coefs:
+        - -1.2786160435853866
+        - 0.036801620872199264
+        - -8.903200469622408e-05
+        - 8.91165168062134e-08
+        - -3.145266062835652e-11
+        - -1333.9747492877464
+        - 11.316229010814261
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 911.3138249397687
+        coefs:
+        - 0.6457680826656368
+        - 0.006695399265609574
+        - -3.8267678956796995e-06
+        - 7.046915302852865e-10
+        - -4.4099612669432504e-14
+        - -785.3117470583835
+        - 7.145571488053921
+        type: NASApolynomial
+      type: NASA
+    type: Species
   name: surface
 Reactions:
 - kinetics:
@@ -1130,5 +1195,96 @@ Reactions:
   reactants:
   - NHX
   - NH3X
+  type: ElementaryReaction
+- kinetics:
+    A: 0.046
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H_X
+  - H_X
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H_X
+  - H2OX
+  radicalchange: 0
+  reactants:
+  - OHX
+  - '[H][H].[Pt]'
+  type: ElementaryReaction
+- kinetics:
+    A: 4872410501190937.0
+    Ea: 120260.48788970396
+    n: 0.6398764921267273
+    type: Arrhenius
+  products:
+  - H_X
+  - OHX
+  radicalchange: 0
+  reactants:
+  - OX
+  - '[H][H].[Pt]'
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H_X
+  - NH3X
+  radicalchange: 0
+  reactants:
+  - '[H][H].[Pt]'
+  - NH2X
+  type: ElementaryReaction
+- kinetics:
+    A: 3299337765902952.5
+    Ea: 120135.49675959794
+    n: 0.6527560044952205
+    type: Arrhenius
+  products:
+  - H_X
+  - NH2X
+  radicalchange: 0
+  reactants:
+  - NHX
+  - '[H][H].[Pt]'
+  type: ElementaryReaction
+- kinetics:
+    A: 3299337765902952.5
+    Ea: 120135.49675959794
+    n: 0.6527560044952205
+    type: Arrhenius
+  products:
+  - H_X
+  - NHX
+  radicalchange: 0
+  reactants:
+  - NX
+  - '[H][H].[Pt]'
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - '[H][H].[Pt]'
+  radicalchange: 0
+  reactants:
+  - X
+  - H2
   type: ElementaryReaction
 Units: {}

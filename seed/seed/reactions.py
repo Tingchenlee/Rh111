@@ -11,7 +11,7 @@ entry(
     index = 0,
     label = "X + X + O2 <=> OX + OX",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=1, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -22,7 +22,7 @@ entry(
     index = 1,
     label = "X + NH3 <=> NH3X",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=1, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -31,9 +31,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 2,
-    label = "OX + NH3X <=> OHX + NH2_X",
+    label = "OX + NH3X <=> OHX + NH2X",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(86841,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.96e+21,'cm^2/(mol*s)'), n=0, Ea=(86841,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -42,9 +42,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 3,
-    label = "OX + NH2_X <=> OHX + NH_X",
+    label = "OX + NH2X <=> OHX + NHX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(106139,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(2.07e+21,'cm^2/(mol*s)'), n=0, Ea=(106139,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -53,9 +53,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 4,
-    label = "OX + NH_X <=> NX + OHX",
+    label = "OX + NHX <=> NX + OHX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(142805,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(2.94e+21,'cm^2/(mol*s)'), n=0, Ea=(142805,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -64,9 +64,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 5,
-    label = "OHX + NH3X <=> H2O_X + NH2_X",
+    label = "OHX + NH3X <=> H2OX + NH2X",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(68507.9,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.84e+22,'cm^2/(mol*s)'), n=0, Ea=(68507.9,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -75,9 +75,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 6,
-    label = "OHX + NH2_X <=> NH_X + H2O_X",
+    label = "OHX + NH2X <=> NHX + H2OX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(25087.4,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(5.65e+21,'cm^2/(mol*s)'), n=0, Ea=(25087.4,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -86,9 +86,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 7,
-    label = "OHX + NH_X <=> NX + H2O_X",
+    label = "OHX + NHX <=> NX + H2OX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(39561,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(2.22e+21,'cm^2/(mol*s)'), n=0, Ea=(39561,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -97,9 +97,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 8,
-    label = "OHX + OHX <=> OX + H2O_X",
+    label = "OHX + OHX <=> OX + H2OX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.17e+21,'cm^2/(mol*s)'), n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -108,9 +108,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 9,
-    label = "X + H2O <=> H2O_X",
+    label = "X + H2O <=> H2OX",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=1, n=0, Ea=(27017.2,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -119,9 +119,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 10,
-    label = "X + X + N2 <=> NX + NX",
+    label = "NX + NX <=> X + X + N2",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=1, n=0, Ea=(246050,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(3.46e+21,'cm^2/(mol*s)'), n=0, Ea=(246050,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -132,7 +132,7 @@ entry(
     index = 11,
     label = "OX + NX <=> X + NOX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(226752,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(3.13e+21,'cm^2/(mol*s)'), n=0, Ea=(226752,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -143,7 +143,7 @@ entry(
     index = 12,
     label = "NOX <=> X + NO",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(6.55e+17,'1/s'), n=0, Ea=(241225,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(6.55e+14,'1/s'), n=0, Ea=(241225,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -152,9 +152,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 13,
-    label = "NX + NOX <=> X + N2O_X",
+    label = "NX + NOX <=> X + N2OX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(206489,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.62e+21,'cm^2/(mol*s)'), n=0, Ea=(206489,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -163,9 +163,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 14,
-    label = "X + N2O <=> N2O_X",
+    label = "N2OX <=> X + N2O",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=1, n=0, Ea=(32806.6,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.69e+13,'1/s'), n=0, Ea=(32806.6,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -174,9 +174,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 15,
-    label = "X + NH3X <=> H_X + NH2_X",
+    label = "X + NH3X <=> H_X + NH2X",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.08e+23,'cm^2/(mol*s)'), n=0, Ea=(100350,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(3.57e+20,'cm^2/(mol*s)'), n=0, Ea=(100350,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -185,9 +185,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 16,
-    label = "X + NH2_X <=> H_X + NH_X",
+    label = "X + NH2X <=> H_X + NHX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.33e+23,'cm^2/(mol*s)'), n=0, Ea=(83946.3,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(3.23e+21,'cm^2/(mol*s)'), n=0, Ea=(83946.3,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -196,9 +196,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 17,
-    label = "X + NH_X <=> NX + H_X",
+    label = "X + NHX <=> NX + H_X",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.33e+23,'cm^2/(mol*s)'), n=0, Ea=(98419.8,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(3.4e+21,'cm^2/(mol*s)'), n=0, Ea=(98419.8,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -209,7 +209,7 @@ entry(
     index = 18,
     label = "OX + H_X <=> X + OHX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(61753.6,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.2e+21,'cm^2/(mol*s)'), n=0, Ea=(61753.6,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -218,9 +218,9 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 19,
-    label = "H_X + OHX <=> X + H2O_X",
+    label = "H_X + OHX <=> X + H2OX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(2.47e+21,'cm^2/(mol*s)'), n=0, Ea=(63683.4,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.91e+21,'cm^2/(mol*s)'), n=0, Ea=(63683.4,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
 Originally from reaction library: Surface/Schneider_Rh111
@@ -229,41 +229,79 @@ Originally from reaction library: Surface/Schneider_Rh111
 
 entry(
     index = 20,
-    label = "NH_X + NH3X <=> NH2_X + NH2_X",
-    degeneracy = 3.0,
-    kinetics = SurfaceArrhenius(A=(4.94901e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*=NH]
-    Euclidian distance = 3.1622776601683795
-    Multiplied by reaction path degeneracy 3.0
-    family: Surface_Abstraction_vdW"""),
+    label = "X + NO2 <=> NO2X",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.9, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
-Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*=NH]
-Euclidian distance = 3.1622776601683795
-Multiplied by reaction path degeneracy 3.0
-family: Surface_Abstraction_vdW
+Originally from reaction library: Surface/Nitrogen
 """,
 )
 
 entry(
     index = 21,
-    label = "NX + NH3X <=> NH_X + NH2_X",
-    degeneracy = 3.0,
-    kinetics = SurfaceArrhenius(A=(4.94901e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*#N]
-    Euclidian distance = 2.23606797749979
-    Multiplied by reaction path degeneracy 3.0
-    family: Surface_Abstraction_vdW"""),
+    label = "NO2X <=> OX + NO",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(3.3e+14,'1/s'), n=0, Ea=(115.5,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
     longDesc = 
 """
-Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*#N]
-Euclidian distance = 2.23606797749979
-Multiplied by reaction path degeneracy 3.0
-family: Surface_Abstraction_vdW
+Originally from reaction library: Surface/Nitrogen
 """,
 )
 
 entry(
     index = 22,
-    label = "X + X + NH3 <=> H_X + NH2_X",
+    label = "OX + NOX <=> X + NO2X",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.3e+17,'cm^2/(mol*s)'), n=0, Ea=(133,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    longDesc = 
+"""
+Originally from reaction library: Surface/Nitrogen
+""",
+)
+
+entry(
+    index = 23,
+    label = "NOX + H_X <=> NX + OHX",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.2e+21,'cm^2/(mol*s)'), n=0, Ea=(25,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    longDesc = 
+"""
+Originally from reaction library: Surface/Nitrogen
+""",
+)
+
+entry(
+    index = 24,
+    label = "NO2X + H_X <=> NOX + OHX",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(3.9e+21,'cm^2/(mol*s)'), n=0, Ea=(20,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    longDesc = 
+"""
+Originally from reaction library: Surface/Nitrogen
+""",
+)
+
+entry(
+    index = 25,
+    label = "X + X + H2O <=> H_X + OHX",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(11.4328,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
+    Euclidian distance = 3.0
+    family: Surface_Adsorption_Dissociative
+    Ea raised from 0.0 to 11.4 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
+Euclidian distance = 3.0
+family: Surface_Adsorption_Dissociative
+Ea raised from 0.0 to 11.4 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 26,
+    label = "X + X + NH3 <=> H_X + NH2X",
     degeneracy = 1.5,
     kinetics = StickingCoefficient(A=0.024, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [N;VacantSite1;VacantSite2]
     Euclidian distance = 1.0
@@ -279,8 +317,40 @@ family: Surface_Adsorption_Dissociative
 )
 
 entry(
-    index = 23,
-    label = "NX + NH2_X <=> NH_X + NH_X",
+    index = 27,
+    label = "OX + N2OX <=> NX + NO2X",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(3.298e+17,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [O;Donating] for rate rule [O;*N-N]
+    Euclidian distance = 2.0
+    family: Surface_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [O;Donating] for rate rule [O;*N-N]
+Euclidian distance = 2.0
+family: Surface_Abstraction
+""",
+)
+
+entry(
+    index = 28,
+    label = "NX + NH3X <=> NHX + NH2X",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.94901e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*#N]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*#N]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 29,
+    label = "NX + NH2X <=> NHX + NHX",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(8.35926e+17,'m^2/(mol*s)'), n=-0.0183333, Ea=(30.05,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Abstracting;*R-H] for rate rule [:N#*;*-N-H]
     Euclidian distance = 3.605551275463989
@@ -296,26 +366,24 @@ family: Surface_Abstraction
 )
 
 entry(
-    index = 24,
-    label = "X + X + H2O <=> H_X + OHX",
-    degeneracy = 2.0,
-    kinetics = StickingCoefficient(A=0.032, n=0, Ea=(11.4328,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
-    Euclidian distance = 3.0
-    Multiplied by reaction path degeneracy 2.0
-    family: Surface_Adsorption_Dissociative
-    Ea raised from 0.0 to 11.4 kJ/mol to match endothermicity of reaction."""),
+    index = 30,
+    label = "NHX + NH3X <=> NH2X + NH2X",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.94901e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*=NH]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
     longDesc = 
 """
-Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
-Euclidian distance = 3.0
-Multiplied by reaction path degeneracy 2.0
-family: Surface_Adsorption_Dissociative
-Ea raised from 0.0 to 11.4 kJ/mol to match endothermicity of reaction.
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [N-R;*=NH]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
 """,
 )
 
 entry(
-    index = 25,
+    index = 31,
     label = "X + X + H2 <=> H_X + H_X",
     degeneracy = 1.0,
     kinetics = StickingCoefficient(A=0.046, n=0, Ea=(0,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
@@ -326,42 +394,8 @@ Originally from reaction library: Surface/CPOX_Pt/Deutschmann2006
 )
 
 entry(
-    index = 26,
-    label = "NH_X + [H][H].[Pt] <=> H_X + NH2_X",
-    degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.29934e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=NH]
-    Euclidian distance = 3.1622776601683795
-    Multiplied by reaction path degeneracy 2.0
-    family: Surface_Abstraction_vdW"""),
-    longDesc = 
-"""
-Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=NH]
-Euclidian distance = 3.1622776601683795
-Multiplied by reaction path degeneracy 2.0
-family: Surface_Abstraction_vdW
-""",
-)
-
-entry(
-    index = 27,
-    label = "NX + [H][H].[Pt] <=> H_X + NH_X",
-    degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.29934e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*#N]
-    Euclidian distance = 2.23606797749979
-    Multiplied by reaction path degeneracy 2.0
-    family: Surface_Abstraction_vdW"""),
-    longDesc = 
-"""
-Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*#N]
-Euclidian distance = 2.23606797749979
-Multiplied by reaction path degeneracy 2.0
-family: Surface_Abstraction_vdW
-""",
-)
-
-entry(
-    index = 28,
-    label = "OHX + [H][H].[Pt] <=> H_X + H2O_X",
+    index = 32,
+    label = "OHX + [H][H].[Pt] <=> H_X + H2OX",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*O-H]
     Euclidian distance = 2.23606797749979
@@ -379,25 +413,25 @@ Ea raised from -46.3 to 0.0 kJ/mol.
 )
 
 entry(
-    index = 29,
-    label = "X + H2 <=> [H][H].[Pt]",
-    degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 5 used for Adsorbate;VacantSite
-    Exact match found for rate rule [Adsorbate;VacantSite]
-    Euclidian distance = 0
-    family: Surface_Adsorption_vdW"""),
+    index = 33,
+    label = "OX + [H][H].[Pt] <=> H_X + OHX",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(4.87241e+15,'m^2/(mol*s)'), n=0.639876, Ea=(120.26,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;*=O] for rate rule [H-H;*=O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
     longDesc = 
 """
-From training reaction 5 used for Adsorbate;VacantSite
-Exact match found for rate rule [Adsorbate;VacantSite]
-Euclidian distance = 0
-family: Surface_Adsorption_vdW
+Estimated using template [AdsorbateVdW;*=O] for rate rule [H-H;*=O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
 """,
 )
 
 entry(
-    index = 30,
-    label = "[H][H].[Pt] + NH2_X <=> H_X + NH3X",
+    index = 34,
+    label = "[H][H].[Pt] + NH2X <=> H_X + NH3X",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*NH2]
     Euclidian distance = 3.1622776601683795
@@ -411,6 +445,57 @@ Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Abstraction_Single_vdW
 Ea raised from -41.3 to 0.0 kJ/mol.
+""",
+)
+
+entry(
+    index = 35,
+    label = "NHX + [H][H].[Pt] <=> H_X + NH2X",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(3.29934e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=NH]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=NH]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 36,
+    label = "NX + [H][H].[Pt] <=> H_X + NHX",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(3.29934e+15,'m^2/(mol*s)'), n=0.652756, Ea=(120.135,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*#N]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*#N]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 37,
+    label = "X + H2 <=> [H][H].[Pt]",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 5 used for Adsorbate;VacantSite
+    Exact match found for rate rule [Adsorbate;VacantSite]
+    Euclidian distance = 0
+    family: Surface_Adsorption_vdW"""),
+    longDesc = 
+"""
+From training reaction 5 used for Adsorbate;VacantSite
+Exact match found for rate rule [Adsorbate;VacantSite]
+Euclidian distance = 0
+family: Surface_Adsorption_vdW
 """,
 )
 
