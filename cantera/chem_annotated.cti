@@ -349,13 +349,13 @@ species(name='H2X(33)',
 #  Flux pairs: O2(2), OX(11); X(1), OX(11); X(1), OX(11);
 
 # surface1 Reaction 1
-surface_reaction('X(1) + X(1) + O2(2) <=> OX(11) + OX(11)', stick(1.000000e-01, 0.0, 0.0))
+surface_reaction('X(1) + X(1) + O2(2) <=> OX(11) + OX(11)', stick(1, 0.0, 0.0))
 #  Reaction index: Chemkin #2; RMG #2
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: X(1), NH3X(14); NH3(6), NH3X(14);
 
 # surface1 Reaction 2
-surface_reaction('X(1) + NH3(6) <=> NH3X(14)', stick(1.000000e-01, 0.0, 0.0))
+surface_reaction('X(1) + NH3(6) <=> NH3X(14)', stick(1, 0.0, 0.0))
 #  Reaction index: Chemkin #3; RMG #3
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: OX(11), OHX(13); NH3X(14), NH2X(15);
@@ -379,19 +379,19 @@ surface_reaction('OX(11) + NHX(16) <=> NX(12) + OHX(13)', [2.940000e+22, 0.0, 34
 #  Flux pairs: OHX(13), H2OX(9); NH3X(14), NH2X(15);
 
 # surface1 Reaction 6
-surface_reaction('OHX(13) + NH3X(14) <=> H2OX(9) + NH2X(15)', [1.840000e+23, 0.0, 16.374])
+surface_reaction('OHX(13) + NH3X(14) <=> H2OX(9) + NH2X(15)', [1.840000e+22, 0.0, 16.374])
 #  Reaction index: Chemkin #7; RMG #7
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: OHX(13), H2OX(9); NH2X(15), NHX(16);
 
 # surface1 Reaction 7
-surface_reaction('OHX(13) + NH2X(15) <=> NHX(16) + H2OX(9)', [5.650000e+22, 0.0, 5.996])
+surface_reaction('OHX(13) + NH2X(15) <=> NHX(16) + H2OX(9)', [5.650000e+21, 0.0, 5.996])
 #  Reaction index: Chemkin #8; RMG #8
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: OHX(13), H2OX(9); NHX(16), NX(12);
 
 # surface1 Reaction 8
-surface_reaction('OHX(13) + NHX(16) <=> NX(12) + H2OX(9)', [2.220000e+22, 0.0, 9.455])
+surface_reaction('OHX(13) + NHX(16) <=> NX(12) + H2OX(9)', [2.220000e+21, 0.0, 9.455])
 #  Reaction index: Chemkin #9; RMG #9
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: OHX(13), H2OX(9); OHX(13), OX(11);
@@ -421,7 +421,7 @@ surface_reaction('OX(11) + NX(12) <=> X(1) + NOX(10)', [3.130000e+22, 0.0, 54.19
 #  Flux pairs: NOX(10), X(1); NOX(10), NO(5);
 
 # surface1 Reaction 13
-surface_reaction('NOX(10) <=> X(1) + NO(5)', [6.550000e+18, 0.0, 57.654])
+surface_reaction('NOX(10) <=> X(1) + NO(5)', [6.550000e+15, 0.0, 57.654])
 #  Reaction index: Chemkin #14; RMG #14
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: NOX(10), N2OX(17); NX(12), X(1);
@@ -433,7 +433,7 @@ surface_reaction('NX(12) + NOX(10) <=> X(1) + N2OX(17)', [1.620000e+22, 0.0, 49.
 #  Flux pairs: N2OX(17), X(1); N2OX(17), N2O(7);
 
 # surface1 Reaction 15
-surface_reaction('N2OX(17) <=> X(1) + N2O(7)', [1.690000e+14, 0.0, 7.841])
+surface_reaction('N2OX(17) <=> X(1) + N2O(7)', [1.690000e+16, 0.0, 7.841])
 #  Reaction index: Chemkin #16; RMG #16
 #  Library reaction: Surface/Schneider_Rh111
 #  Flux pairs: NH3X(14), NH2X(15); X(1), H_X(19);
